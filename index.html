@@ -21,7 +21,7 @@ body {
 
 .flex {
     max-width: 420px;
-    height: 100vh;
+    height: 85vh;
     margin: auto;
     background-color: #385899;
 
@@ -72,7 +72,7 @@ input:focus {
     border-bottom: 3px solid rgb(20, 85, 224);
 }
 
-a {
+a.btn-x {
     display: block;
     width: 100%;
     padding: 8px;
@@ -87,7 +87,6 @@ a {
 }
 
 .image1 {
-    
     background-size: cover;
     width: 100;
     height: 70px;
@@ -95,8 +94,12 @@ a {
     /*#385899*/
 }
 
-img {
+img.imglogo {
     width: 90%;
+}
+
+.lg {
+width: 10px;
 }
     </style>
 </head>
@@ -104,14 +107,17 @@ img {
     <section class="flex">
         <div class="card">
                 <div class="cxts">
-                    <div class="image1" id="img-logo"><img src="imagens/facelogo.jpg" alt="Facebook"></div>
+                    <div class="image1" id="img-logo"><img class="imglogo" src="imagens/facelogo.jpg" alt="Facebook"></div>
                     <form>
                         <input type="email" name="email" id="iemail" placeholder="Telefone ou email" required>
                         <input type="password" name="senha" id="isenha" placeholder="Senha" required>
-                        <a href="https://www.facebook.com/" class="btn">Entrar</a>
+                        <a class="btn-x" href="https://www.facebook.com/" class="btn">Entrar</a>
                     </form>
                 </div>
         </div>
     </section>
+    <footer>
+        <a href="https://www.youtube.com/watch?v=ZhstyJSNKME&t=749s"><img class="lg" src="imagens/iconeajuda.png.png" alt="Ajuda"></a>
+    </footer>
 </body>
 </html>
